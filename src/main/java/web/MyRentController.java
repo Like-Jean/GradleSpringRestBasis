@@ -7,6 +7,7 @@ import java.util.List;
 import model.Car;
 
 import org.springframework.hateoas.ResourceSupport;
+import static org.springframework.hateoas.mvc.ControllerLinkBuilder.*;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -20,7 +21,7 @@ import dto.CarDTO;
 @Controller
 public class MyRentController implements RentService{
 
-	List<Car> cars = new ArrayList<Car>();	// représente base de dojnnées
+	List<Car> cars = new ArrayList<Car>();
 	
 	public MyRentController(){
 		Car car = new Car();
@@ -69,18 +70,17 @@ public class MyRentController implements RentService{
 	@ResponseBody
 	@Override
 	public CarDTO getCar(@PathVariable("plateNumber") String plateNumber) throws Exception {
-		/*Car car;
+		Car car;
 		int i=0;
 		while(i<cars.size() && cars.get(i).getPlateNumber().equals(plateNumber)==false){
 			i++;
 		}
-		if(i<cars.size()){	// voiture trouvée
+		if(i<cars.size()){	//
 			car = cars.get(i);
 			return new CarDTO(car);
-		} else {			// voiture non trouvée
+		} else {			//
 			throw new IOException("No car with such a plate number");
-		}*/
-		return null;
+		}
 	}
 
 	/**
@@ -93,17 +93,17 @@ public class MyRentController implements RentService{
 	@ResponseStatus(HttpStatus.OK)
 	@Override
 	public void rentCar(@PathVariable("plateNumber") String plateNumber) throws Exception {
-		/*Car car;
+		Car car;
 		int i=0;
 		while(i<cars.size() && cars.get(i).getPlateNumber().equals(plateNumber)==false){
 			i++;
 		}
-		if(i<cars.size()){	// voiture trouvée
+		if(i<cars.size()){	// 
 			car = cars.get(i);
 			car.setRented(true);
-		} else {			// voiture non trouvée
+		} else {			// 
 			throw new IOException("No car with such a plate number");
-		}*/
+		}
 	}
 
 	/**
@@ -115,17 +115,17 @@ public class MyRentController implements RentService{
 	@ResponseStatus(HttpStatus.OK)
 	@Override
 	public void renderCar(@PathVariable("plateNumber") String plateNumber) throws Exception {
-		/*Car car;
+		Car car;
 		int i=0;
 		while(i<cars.size() && cars.get(i).getPlateNumber().equals(plateNumber)==false){
 			i++;
 		}
-		if(i<cars.size()){	// voiture trouvée
+		if(i<cars.size()){	
 			car = cars.get(i);
 			car.setRented(false);
-		} else {			// voiture non trouvée
+		} else {			
 			throw new IOException("No car with such a plate number");
-		}*/
+		}
 	}
 
 }
