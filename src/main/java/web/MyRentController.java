@@ -7,7 +7,6 @@ import java.util.List;
 import model.Car;
 
 import org.springframework.hateoas.ResourceSupport;
-import static org.springframework.hateoas.mvc.ControllerLinkBuilder.*;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -53,7 +52,7 @@ public class MyRentController implements RentService{
 	@Override
 	public List<CarDTO> getCars() {
 		List<CarDTO> dtos = new ArrayList<CarDTO>();
-		for(int i=0; i<cars.size(); i++){	// parcours BDD
+		for(int i=0; i<cars.size(); i++){	
 			dtos.add(new CarDTO(cars.get(i)));				
 		}
 		return dtos;

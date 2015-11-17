@@ -1,8 +1,6 @@
 package model;
 
-import org.springframework.hateoas.ResourceSupport;
-
-public class Car extends ResourceSupport {
+public class Car{
 	
 	String plateNumber;
 	boolean rented;

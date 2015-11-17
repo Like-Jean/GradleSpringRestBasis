@@ -4,7 +4,7 @@ var rentControllers = angular.module('rentControllers', []);
 
 rentControllers.controller("rentController", function($scope,$http,$routeParams) {
 
-	$http.get('http://localhost:8080/GradleSpringRestBasis-master/car/').
+	$http.get('http://localhost:8080/GradleSpringRestBasis/car/').
 	  success(function(data, status, headers, config) {
 	  	$scope.carsList = data;
 	  	$scope.selected = data[0];
