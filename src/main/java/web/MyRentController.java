@@ -5,7 +5,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import model.Car;
+import assembler.CarResourceAssembler;
 
+import org.springframework.hateoas.Resource;
 import org.springframework.hateoas.ResourceSupport;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
@@ -18,9 +20,11 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import dto.CarDTO;
 
 @Controller
+@RequestMapping("/myRent/car")
 public class MyRentController implements RentService{
 
 	List<Car> cars = new ArrayList<Car>();
+	CarResourceAssembler CarResourceAssembler = new CarResourceAssembler();
 	
 	public MyRentController(){
 		Car car = new Car();
@@ -46,16 +50,20 @@ public class MyRentController implements RentService{
 	*
 	* @return all cars not rented
 	*/
-	@RequestMapping(value = "/car", method = RequestMethod.GET)
+	@RequestMapping(value = "", method = RequestMethod.GET)
 	@ResponseStatus(HttpStatus.OK)
 	@ResponseBody
 	@Override
-	public List<CarDTO> getCars() {
-		List<CarDTO> dtos = new ArrayList<CarDTO>();
-		for(int i=0; i<cars.size(); i++){	
-			dtos.add(new CarDTO(cars.get(i)));				
+	public List<Resource<CarDTO>> getCars() {
+		List<Resource<CarDTO>> CarResourceCollection = new ArrayList<Resource<CarDTO>>();
+		
+		for(int i=0; i<cars.size(); i++){
+			if(!cars.get(i).isRented()){
+				CarResourceCollection.add(CarResourceAssembler.toResource(new CarDTO(cars.get(i))));	
+			}
 		}
-		return dtos;
+		
+		return CarResourceCollection;
 	}
 
 	/**
@@ -64,11 +72,11 @@ public class MyRentController implements RentService{
 	* @return car specifications only (if not rented)
 	* @throws Exception no car with this plate number or already rented
 	*/
-	@RequestMapping(value = "/car/{plateNumber}", method = RequestMethod.GET)
+	@RequestMapping(value = "/{plateNumber}", method = RequestMethod.GET)
 	@ResponseStatus(HttpStatus.OK)
 	@ResponseBody
 	@Override
-	public CarDTO getCar(@PathVariable("plateNumber") String plateNumber) throws Exception {
+	public Resource<CarDTO> getCar(@PathVariable("plateNumber") String plateNumber) throws Exception {
 		Car car;
 		int i=0;
 		while(i<cars.size() && cars.get(i).getPlateNumber().equals(plateNumber)==false){
@@ -76,7 +84,8 @@ public class MyRentController implements RentService{
 		}
 		if(i<cars.size()){	//
 			car = cars.get(i);
-			return new CarDTO(car);
+			Resource<CarDTO> carResource = CarResourceAssembler.toResource(new CarDTO(car));
+			return carResource;
 		} else {			//
 			throw new IOException("No car with such a plate number");
 		}
@@ -88,7 +97,7 @@ public class MyRentController implements RentService{
 	* @return car specifications
 	* @throws Exception no car with this plate number or already rented
 	*/
-	@RequestMapping(value = "/car/{plateNumber}", method = RequestMethod.DELETE)
+	@RequestMapping(value = "/{plateNumber}", method = RequestMethod.DELETE)
 	@ResponseStatus(HttpStatus.OK)
 	@Override
 	public void rentCar(@PathVariable("plateNumber") String plateNumber) throws Exception {
@@ -100,6 +109,9 @@ public class MyRentController implements RentService{
 		if(i<cars.size()){	// 
 			car = cars.get(i);
 			car.setRented(true);
+			
+			/*Resource<CarDTO> carResource = CarResourceAssembler.toResource(new CarDTO(car));
+			return carResource;*/
 		} else {			// 
 			throw new IOException("No car with such a plate number");
 		}
@@ -110,7 +122,7 @@ public class MyRentController implements RentService{
 	** @return actions to be done
 	* @throws Exception no car with this plate number or not rented
 	*/
-	@RequestMapping(value = "/car/{plateNumber}", method = RequestMethod.PUT)
+	@RequestMapping(value = "/{plateNumber}", method = RequestMethod.PUT)
 	@ResponseStatus(HttpStatus.OK)
 	@Override
 	public void renderCar(@PathVariable("plateNumber") String plateNumber) throws Exception {
@@ -122,6 +134,9 @@ public class MyRentController implements RentService{
 		if(i<cars.size()){	
 			car = cars.get(i);
 			car.setRented(false);
+			
+			/*Resource<CarDTO> carResource = CarResourceAssembler.toResource(new CarDTO(car));
+			return carResource;*/
 		} else {			
 			throw new IOException("No car with such a plate number");
 		}

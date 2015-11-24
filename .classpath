@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="output" path="bin"/>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="src/main/resources"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry sourcepath="/Users/guolike/.gradle/caches/modules-2/files-2.1/org.springframework.hateoas/spring-hateoas/0.9.0.RELEASE/c9c521609a66a82a7cafd1939546b7d0df0063d1/spring-hateoas-0.9.0.RELEASE-sources.jar" kind="lib" path="/Users/guolike/.gradle/caches/modules-2/files-2.1/org.springframework.hateoas/spring-hateoas/0.9.0.RELEASE/18872c263352a7d240d3dd3f6a0560f89a2fa2c5/spring-hateoas-0.9.0.RELEASE.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/guolike/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-mapper-asl/1.9.12/446f3d18401f02ac6741ff980d1a7566786936c/jackson-mapper-asl-1.9.12-sources.jar" kind="lib" path="/Users/guolike/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-mapper-asl/1.9.12/8b290aae44213e2f6da00c07af59b0d442068f4d/jackson-mapper-asl-1.9.12.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/guolike/.gradle/caches/modules-2/files-2.1/log4j/log4j/1.2.17/677abe279b68c5e7490d6d50c6951376238d7d3e/log4j-1.2.17-sources.jar" kind="lib" path="/Users/guolike/.gradle/caches/modules-2/files-2.1/log4j/log4j/1.2.17/5af35056b4d257e4b64b9e8069c0746e8b08629f/log4j-1.2.17.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/guolike/.gradle/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-catalina/7.0.47/fb86c8eb570cd14517b2847fc2da404958aeb92a/tomcat-catalina-7.0.47-sources.jar" kind="lib" path="/Users/guolike/.gradle/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-catalina/7.0.47/12a1630cae52dfb3203c9f2395c6751f7a960430/tomcat-catalina-7.0.47.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/guolike/.gradle/caches/modules-2/files-2.1/junit/junit/4.5/72176579bfb4b1dc795cd2bd2d6943b8285729d8/junit-4.5-sources.jar" kind="lib" path="/Users/guolike/.gradle/caches/modules-2/files-2.1/junit/junit/4.5/7059d3d3bedc1fca9b33cde8503095b3576a0bba/junit-4.5.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/guolike/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/3.2.7.RELEASE/efc6d3d6c620d5e7925211c4730bfc1cdcd5635c/spring-aop-3.2.7.RELEASE-sources.jar" kind="lib" path="/Users/guolike/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/3.2.7.RELEASE/ce916b6ac588a9e19b38ba08174b7765c9874f94/spring-aop-3.2.7.RELEASE.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/guolike/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/3.2.7.RELEASE/145cbefc275f12f93f692d8a843104e3318f446b/spring-beans-3.2.7.RELEASE-sources.jar" kind="lib" path="/Users/guolike/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/3.2.7.RELEASE/cdb6539cbf9435e58f99a599a777d6843eafeb2a/spring-beans-3.2.7.RELEASE.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/guolike/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/3.2.7.RELEASE/63c08e9b292bf4c1318a617c86572a125319bc3a/spring-context-3.2.7.RELEASE-sources.jar" kind="lib" path="/Users/guolike/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/3.2.7.RELEASE/ec83f7b421233c0590f26256dad934bb7a407848/spring-context-3.2.7.RELEASE.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/guolike/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/3.2.7.RELEASE/9927904cdfd662bddec68a89d714bb4c2fac66d8/spring-core-3.2.7.RELEASE-sources.jar" kind="lib" path="/Users/guolike/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/3.2.7.RELEASE/92728cc10f63c1c0ca0d76b29daf324d0eb700f1/spring-core-3.2.7.RELEASE.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/guolike/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/3.2.7.RELEASE/f1c9398adbbb1bba9fb8c27acaf5f4a74297fbfd/spring-web-3.2.7.RELEASE-sources.jar" kind="lib" path="/Users/guolike/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/3.2.7.RELEASE/d239d8264488b8fe3bb9a50728a1dfa8915f1aa/spring-web-3.2.7.RELEASE.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/guolike/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/3.2.7.RELEASE/e5e5b301ac4fa4f13a18fe9b8c4de2805be171b0/spring-webmvc-3.2.7.RELEASE-sources.jar" kind="lib" path="/Users/guolike/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/3.2.7.RELEASE/ace95dad73b7276754fbcc80e95a8fbbe18123b6/spring-webmvc-3.2.7.RELEASE.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/guolike/.gradle/caches/modules-2/files-2.1/org.objenesis/objenesis/1.3/15ba25a784ff6d11db347114acda51b1747df63c/objenesis-1.3-sources.jar" kind="lib" path="/Users/guolike/.gradle/caches/modules-2/files-2.1/org.objenesis/objenesis/1.3/dc13ae4faca6df981fc7aeb5a522d9db446d5d50/objenesis-1.3.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/guolike/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.5/654135274d4c27132ea208a4ec07f344bdb83bcb/slf4j-api-1.7.5-sources.jar" kind="lib" path="/Users/guolike/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.5/6b262da268f8ad9eff941b25503a9198f0a0ac93/slf4j-api-1.7.5.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/guolike/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-core-asl/1.9.12/ed7928072c458d8576c969cc491af707151492fb/jackson-core-asl-1.9.12-sources.jar" kind="lib" path="/Users/guolike/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-core-asl/1.9.12/ecfc6f73a841c4c3c653b59651a3f9d5f1286469/jackson-core-asl-1.9.12.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/guolike/.gradle/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-servlet-api/7.0.47/b1ac530f5edc374c22fa7bcac12ce13359dec2f9/tomcat-servlet-api-7.0.47-sources.jar" kind="lib" path="/Users/guolike/.gradle/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-servlet-api/7.0.47/346360350e369f894a08e9de77f4d9f0139e7007/tomcat-servlet-api-7.0.47.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/guolike/.gradle/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-juli/7.0.47/ebb226a48375ef922eb2f44567c840f8f52c7b76/tomcat-juli-7.0.47-sources.jar" kind="lib" path="/Users/guolike/.gradle/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-juli/7.0.47/dad48969c18899fc02ed38a423d8b54ba78487d0/tomcat-juli-7.0.47.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/guolike/.gradle/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-annotations-api/7.0.47/d5e249ed38457f740382a2b93d5ce0cc20c64744/tomcat-annotations-api-7.0.47-sources.jar" kind="lib" path="/Users/guolike/.gradle/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-annotations-api/7.0.47/29951dcc214a5f2f8d685899fb7a81a1f0778883/tomcat-annotations-api-7.0.47.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/guolike/.gradle/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-api/7.0.47/d8d55e332e17786d01170daf1aff7c768f91e44b/tomcat-api-7.0.47-sources.jar" kind="lib" path="/Users/guolike/.gradle/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-api/7.0.47/baefb943f82079d3028433f4bb4936f44e61373d/tomcat-api-7.0.47.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/guolike/.gradle/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-util/7.0.47/e9d07bf15f4689a7edb3061694d969bdc899fcf1/tomcat-util-7.0.47-sources.jar" kind="lib" path="/Users/guolike/.gradle/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-util/7.0.47/ca8f3694643ce50ecc0b883cb62fa1c0854603d1/tomcat-util-7.0.47.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/guolike/.gradle/caches/modules-2/files-2.1/aopalliance/aopalliance/1.0/4a4b6d692e17846a9f3da036438a7ac491d3c814/aopalliance-1.0-sources.jar" kind="lib" path="/Users/guolike/.gradle/caches/modules-2/files-2.1/aopalliance/aopalliance/1.0/235ba8b489512805ac13a8f9ea77a1ca5ebe3e8/aopalliance-1.0.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/guolike/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/3.2.7.RELEASE/27c39d6ac7aba1420b26f1f6c48d2aaf92b6d1a2/spring-expression-3.2.7.RELEASE-sources.jar" kind="lib" path="/Users/guolike/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/3.2.7.RELEASE/54b8c4506f71616f3fa7e612f29a86877ddde22d/spring-expression-3.2.7.RELEASE.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/guolike/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.1.1/f3f156cbff0e0fb0d64bfce31a352cce4a33bc19/commons-logging-1.1.1-sources.jar" kind="lib" path="/Users/guolike/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.1.1/5043bfebc3db072ed80fbd362e7caf00e885d8ae/commons-logging-1.1.1.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+</classpath>

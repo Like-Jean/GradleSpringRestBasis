@@ -1,4 +1,4 @@
-'use strict';
+//'use strict';
 
 var app = angular.module('rentCar', [
 	'ngRoute','rentControllers'                                               ]);
@@ -12,6 +12,10 @@ app.config(['$routeProvider',
 			when('/rentCars/rent', {
 				templateUrl: 'partials/rent.html',
 				controller: 'rentController'
+			}).
+			when('/rentCars/getback',{
+				templateUrl: 'partials/getBack.html',
+				controller: 'getBackController'
 			}).
 			otherwise({
 				redirectTo: '/rentCars'

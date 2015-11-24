@@ -1,6 +1,8 @@
 package web;
 
 import java.util.List;
+
+import org.springframework.hateoas.Resource;
 import org.springframework.hateoas.ResourceSupport;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -22,10 +24,10 @@ public interface RentService {
 	*
 	* @return all cars not rented
 	*/
-	@RequestMapping(value = "/car", method = RequestMethod.GET)
+	@RequestMapping(value = "/", method = RequestMethod.GET)
 	@ResponseStatus(HttpStatus.OK)
 	@ResponseBody
-	public List<CarDTO> getCars();
+	public List<Resource<CarDTO>> getCars();
 	
 	/**
 	* Return specifications of a car.
@@ -36,7 +38,7 @@ public interface RentService {
 	@RequestMapping(value = "/car/{plateNumber}", method = RequestMethod.GET)
 	@ResponseStatus(HttpStatus.OK)
 	@ResponseBody
-	public CarDTO getCar(@PathVariable("plateNumber") String plateNumber) throws Exception;
+	public Resource<CarDTO> getCar(@PathVariable("plateNumber") String plateNumber) throws Exception;
 	
 	/**
 	* Rent a car.

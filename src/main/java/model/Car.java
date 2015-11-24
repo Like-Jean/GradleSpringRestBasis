@@ -2,6 +2,7 @@ package model;
 
 public class Car{
 	
+	
 	String plateNumber;
 	boolean rented;
 
